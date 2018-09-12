@@ -37,6 +37,13 @@ public class SortingIntArray {
         intArray[second] = dummy;
     }
 
+    protected final int at(int index) throws IndexOutOfBoundsSortingintArrayException{
+        if(index<0 || index>=count){
+            throw new IndexOutOfBoundsSortingintArrayException();
+        }
+        return intArray[index];
+    }
+
     public void sort(){
         //no sorted
     }
